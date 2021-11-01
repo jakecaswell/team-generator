@@ -8,6 +8,7 @@ const path = require('path');
 const fs = require('fs');
 const outputPath = path.join('./Output/', 'team.html');
 
+// an array to store the created members
 const teamMembers = [];
 
 const runApp = () => {
@@ -131,6 +132,7 @@ const getIntern = () => {
     })
 }
 
+// function that creates the html file
 const outputTeam = () => {
     fs.writeFileSync(outputPath, render(teamMembers), 'utf-8');
 }
