@@ -11,6 +11,7 @@ test('create engineer object', () => {
 
 test('return github username', () => {
     const engineer = new Engineer('Name', 12, 'engineer@email.com', 'username');
-
+    engineer.getGithub();
+    
     expect(engineer.github).toBeDefined();
 })

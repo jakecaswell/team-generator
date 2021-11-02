@@ -11,6 +11,7 @@ test('create intern object', () => {
 
 test('returns the school value', () => {
     const intern = new Intern('Clint', 2, 'clint.com', 'University of Toledo');
-
+    intern.getSchool();
+    
     expect(intern.school).toBeDefined();
 })
